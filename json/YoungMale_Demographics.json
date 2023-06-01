@@ -1,0 +1,45 @@
+{
+  "age": 23,
+  "sex": "male",
+  "height": 178,
+  "weight": 75,
+  "blood_test_results": {
+    "hemoglobin": 14.5,
+    "platelet_count": 250000,
+    "white_blood_cells": 6000,
+    "red_blood_cells": 5000000,
+    "hematocrit": 45,
+    "glucose": 90,
+    "cholesterol": 180,
+    "triglycerides": 150,
+    "hdl_cholesterol": 60,
+    "ldl_cholesterol": 100,
+    "blood_urea_nitrogen": 20,
+    "serum_creatinine": 1.2,
+    "serum_sodium": 140,
+    "serum_potassium": 4.5,
+    "serum_calcium": 9.5
+  },
+  "BMI": 23.7,
+  "blood_vitamin_levels": {
+    "vitamin_d": 32,
+    "vitamin_b12": 550,
+    "vitamin_a": 5000,
+    "vitamin_e": 15,
+    "vitamin_k": 80,
+    "vitamin_c": 90,
+    "thiamine": 1.2,
+    "riboflavin": 1.3,
+    "niacin": 16,
+    "vitamin_b6": 1.3,
+    "folate": 400,
+    "vitamin_b5": 5,
+    "biotin": 30,
+    "choline": 550
+  },
+  "socioeconomic_information": {
+    "household_income": "lower_middle_class",
+    "education": "college_student"
+  },
+  "location": "USA"
+}

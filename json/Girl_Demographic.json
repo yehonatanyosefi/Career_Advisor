@@ -1,0 +1,44 @@
+{
+  "age": 15,
+  "sex": "female",
+  "height": 160,
+  "weight": 55,
+  "BMI": 21.5,
+  "blood_test_results": {
+    "hemoglobin": 13,
+    "platelet_count": 350000,
+    "white_blood_cells": 6000,
+    "red_blood_cells": 4500000,
+    "hematocrit": 40,
+    "mean_corpuscular_volume": 90,
+    "mean_corpuscular_hemoglobin": 27,
+    "mean_corpuscular_hemoglobin_concentration": 33,
+    "red_cell_distribution_width": 13,
+    "neutrophils": 60,
+    "lymphocytes": 30,
+    "monocytes": 7,
+    "eosinophils": 2,
+    "basophils": 1
+  },
+  "blood_vitamin_levels": {
+    "vitamin_d": 30,
+    "vitamin_b12": 500,
+    "vitamin_a": 70,
+    "vitamin_e": 10,
+    "vitamin_k": 70,
+    "vitamin_c": 70,
+    "thiamine": 90,
+    "riboflavin": 80,
+    "niacin": 20,
+    "vitamin_b6": 70,
+    "folate": 10,
+    "vitamin_b5": 50,
+    "biotin": 90,
+    "vitamin_b3": 40
+  },
+  "socioeconomic_information": {
+    "household_income": "middle_class",
+    "education": "high_school"
+  },
+  "location": "suburbs of Tel Aviv"
+}
