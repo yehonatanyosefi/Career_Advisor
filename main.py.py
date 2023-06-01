@@ -3,12 +3,10 @@ from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 
-
 def load_json(file_name):
     with open(f'json/{file_name}.json') as f:
         data = json.load(f)
     return data
-
 
 # Loading JSON data, replace with api call for database just for one user only instead of all users
 data_map = {
@@ -38,19 +36,15 @@ while True:
     else:
         print("Invalid person. Please try again.")
 
-# Parsing the user details from the JSON file:
-
 # setting demographic, personality and self_description according to chosen person
 demographic = data_map[person]['demographic']
 personality = data_map[person]['personality']
 self_description = data_map[person]['self_description']
 
 # person information made into a prompt
-# person_information = f"A {age}-year-old {sex} living in {location} has a extroversion score of {extroversion} and a agreeableness score of {agreeableness}. . Described as: '{description_1}' and '{description_2}'."
 person_information = f"Demographic information: {demographic} Personality information: {personality} Self Description information: {self_description}."
 
 if __name__ == "__main__":
-    #  Learn how to use langchain and replace chat history with a summarization or a vector database
     chat_history = ""
     first_system_template = """
           System: `As an expert career coach specializing in athletics, I'm here to provide a comprehensive analysis to help you identify an athletic career that best aligns with your abilities and interests. In order to provide this personalized guidance, I need to understand your strengths, weaknesses, and the nature of your interests.
@@ -85,7 +79,7 @@ if __name__ == "__main__":
         new_chain = LLMChain(llm=llm, prompt=new_coach_prompt_template)
         result = new_chain.run(person_information=person_information,
                                chat_history=chat_history, input=message)
-        chat_history += "\nYou: " + message
+        chat_history += "\nUser: " + message
         chat_history += "\nAI: " + result
         print("AI: " + result)
 # TODO add functions, add chat history summarization, improve prompting(maybe reduce the amount of tokens in the prompt to avoid saturation)
